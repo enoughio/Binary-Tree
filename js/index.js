@@ -135,6 +135,35 @@ function toggleLock() {
 }
 
 
+// for creating a complete binary tree
+function CompleteBinaryTree(arr) {
+    if (!arr || arr.length === 0) return [];
+    
+    class TreeNode {
+        constructor(val) {
+            this.val = val;
+            this.left = null;
+            this.right = null;
+        }
+    }
+    
+    let nodes = arr.map(value => new TreeNode(value));
+    
+    for (let i = 0; i < nodes.length; i++) {
+        let leftIndex = 2 * i + 1;
+        let rightIndex = 2 * i + 2;
+        
+        if (leftIndex < nodes.length) {
+            nodes[i].left = nodes[leftIndex];
+        }
+        
+        if (rightIndex < nodes.length) {
+            nodes[i].right = nodes[rightIndex];
+        }
+    }
+    
+    return nodes[0]; // Returns the root of the complete binary tree
+}
 
 function clearAndCreate() {
     var inp = document.getElementById("inp")
