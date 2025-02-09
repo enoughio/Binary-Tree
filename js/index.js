@@ -165,6 +165,7 @@ function CompleteBinaryTree(arr) {
     return nodes[0]; // Returns the root of the complete binary tree
 }
 
+
 function clearAndCreate() {
     var inp = document.getElementById("inp")
     var btn_click = document.querySelector(".btn-clear")
