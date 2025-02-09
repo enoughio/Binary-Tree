@@ -1,7 +1,7 @@
 # Binary-Tree-Visualization
 Binary-Tree-Visualization
 
-[Live Demo](https://saliherdemk.github.io/Binary-Tree-Visualization/)
+[Live Demo](https://enoughio.github.io/Binary-Tree/)
 
 ## My Binary Tree simulator            CARE-C
 
